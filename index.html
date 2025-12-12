@@ -41,10 +41,11 @@
     </section>
     <!-- HEADER -->
     <header class="header">
+        <!-- LOGO -->
         <section class="header__logo">
-            <img src="./assets/images/logo.png" alt="logo">
-            <h1>SunWard</h1>
+            <img src="./assets/images/home/logo-title.png" alt="logo">
         </section>
+        <!-- MENÚ -->
         <nav class="nav">
             <ul class="nav__list">
                 <!-- HOME -->
@@ -69,20 +70,292 @@
                 </li>
                 <!-- CONTACT -->
                 <li class="nav__list">
+                    <i class="fa-solid fa-address-book"></i>
                     <a href="./pages/contact.html" class="nav__link">Contacto</a>
                 </li>
             </ul>
         </nav>
     </header>
-
+    <!-- THEME -->
+    <section class="theme">
+        <h2 class="theme__title" TEMA DE VIAJE COMPLETO</h2>
+        <h3 class="theme__subtitle">Comienza tu destino aquí...</h3>
+        <article class="theme__find">
+            <ul class="theme__list">
+                <li><a href="#" class="theme__link">Hoteles</a></li>
+                <li><a href="#" class="theme__link">Paquetes</a></li>
+                <li><a href="#" class="theme__link">Lugares</a></li>
+            </ul>
+            <form action="find__form">
+                <!-- NAME -->
+                <div class="choose">
+                    <input type="text" placeholder="Escriba el nombre del hotel aquí...">
+                </div>
+                <!-- CITY -->
+                <div class="choose">
+                    <input type="text" placeholder="Escoja la ciudad">
+                    <select name="city">
+                        <option value="" selected hidden>▼</option>
+                        <option value="newyork">New York, US</option>
+                        <option value="tokyo">Tokyo, Japón</option>
+                        <option value="london">Londón, UK</option>
+                        <option value="sevilla">Sevilla, ES</option>
+                    </select>
+                </div>
+                <!-- CATEGORY -->
+                <div class="choose">
+                    <input type="text" placeholder="Escoja la categoria">
+                    <select name="category">
+                        <option value="" selected hidden>▼</option>
+                        <option value="newyork">Familiar</option>
+                        <option value="tokyo">Romántico</option>
+                        <option value="london">Negocio</option>
+                        <option value="sevilla">Soletero</option>
+                    </select>
+                </div>
+                <!-- MIN-PRICE -->
+                <div class="choose">
+                    <input type="number" placeholder="Precio mínimo">
+                </div>
+                <!-- MANX-PRICE -->
+                <div class="choose">
+                    <input type="number" placeholder="Precio máximo">
+                </div>
+                <button class="find__hotel">
+                    <a href="./pages/hotels.html">Buscar Hotel</a>
+                </button>
+            </form>
+        </article>
+    </section>
     <!-- CONTENEDOR -->
-    <main>
+    <main class="home-container">
+        <!-- WELCOME -->
+        <section class="welcome">
+            <div class="title-cont">
+                <h2 class="welcome__title">Bienvenido a SunWARD</h2>
+                <i class="fa-solid fa-binoculars"></i>
+            </div>
+            <p class="welcome__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+            <button class="welcome__btn">
+                <a href="./index.html">Explorar futuros</a>
+            </button>
+            <button class="welcome__btn">
+                <a href="./pages/contact.html">Contáctanos</a>
+            </button>
+        </section>
+        <!-- INFO -->
+        <section class="info">
+            <!-- GLOBO -->
+            <article class="info__card">
+                <header class="info__header">
+                    <img class="info__img" src="./assets/images/home/globo.png" alt="globo-aerostatico">
+                    <h3 class="info__title">Actividades Especiales</h3>
+                </header>
+                <p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.</p>
+            </article>
+            <!-- AVIÓN -->
+            <article class="info__card">
+                <header class="info__header">
+                    <img class="info__img" src="./assets/images/home/avion.png" alt="globo-aerostatico">
+                    <h3 class="info__title">Reservas de Viaje</h3>
+                </header>
+                <p>Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.</p>
+            </article>
+            <!-- BRUJULA -->
+            <article class="info__card">
+                <header class="info__header">
+                    <img class="info__img" src="./assets/images/home/brujula.png" alt="globo-aerostatico">
+                    <h3 class="info__title">Guía privado</h3>
+                </header>
+                <p>Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui.</p>
+            </article>
+            <!-- MAPA -->
+            <article class="info__card">
+                <header class="info__header">
+                    <img class="info__img" src="./assets/images/home/mapa.png" alt="globo-aerostatico">
+                    <h3 class="info__title">Gerente de Destinos</h3>
+                </header>
+                <p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.</p>
+            </article>
+        </section>
+        <!-- BEST -->
+        <section class="best">
+            <h2 class="best__title">Los mejores paquetes de vacaciones</h2>
+            <!-- CARD1 -->
+            <article class="best__card">
+                <img src="./assets/images/home/shop18-420x420.jpg" alt="shop18">
+                <header class="best__header">
+                    <h3 class="best__title">Los Grandes Cañones</h3>
+                    <p class="best__text">Calle Portland, Australia</p>
+                </header>
+                <main class="best__main">
+                    <div class="days">
+                        <i class="fa-regular fa-calendar-days best__icon"></i>
+                        <p class="best__subtext">Número de días: 5</p>
+                    </div>
+                    <div class="people">
+                        <i class="fa-solid fa-user best__icon"></i>
+                        <p>Personas: 4</p>
+                    </div>
+                </main>
+                <footer class="best__footer">
+                    <p class="best__price">200€</p>
+                    <button class="best__btn">
+                        <a href="./pages/packages.html">Ver detalles</a>
+                    </button>
+                </footer>
+            </article>
+            <!-- CARD2 -->
+            <article class="best__card">
+                <img src="./assets/images/home/shop1-420x420.jpg" alt="shop18">
+                <header class="best__header">
+                    <h3 class="best__title">Viaje especial en globo aerostático</h3>
+                    <p class="best__text">University Lake De, America</p>
+                </header>
+                <main class="best__main">
+                    <div class="days">
+                        <i class="fa-regular fa-calendar-days best__icon"></i>
+                        <p class="best__subtext">Número de días: 4</p>
+                    </div>
+                    <div class="people">
+                        <i class="fa-solid fa-user best__icon"></i>
+                        <p>Personas: 3</p>
+                    </div>
+                </main>
+                <footer class="best__footer">
+                    <p class="best__price">154€</p>
+                    <button class="best__btn">
+                        <a href="./pages/packages.html">Ver detalles</a>
+                    </button>
+                </footer>
+            </article>
+            <!-- CARD3 -->
+            <article class="best__card">
+                <img src="./assets/images/home/shop20-420x420.jpg" alt="shop18">
+                <header class="best__header">
+                    <h3 class="best__title">Días entre semana en Tailandia</h3>
+                    <p class="best__text">Candler Rd, Roswell</p>
+                </header>
+                <main class="best__main">
+                    <div class="days">
+                        <i class="fa-regular fa-calendar-days best__icon"></i>
+                        <p class="best__subtext">Número de días: 2</p>
+                    </div>
+                    <div class="people">
+                        <i class="fa-solid fa-user best__icon"></i>
+                        <p>Personas: 1</p>
+                    </div>
+                </main>
+                <footer class="best__footer">
+                    <p class="best__price">323€</p>
+                    <button class="best__btn">
+                        <a href="./pages/packages.html">Ver detalles</a>
+                    </button>
+                </footer>
+            </article>
+            <!-- CARD4 -->
+            <article class="best__card">
+                <img src="./assets/images/home/shop3-420x420.jpg" alt="shop18">
+                <header class="best__header">
+                    <h3 class="best__title">Vistas de la montaña</h3>
+                    <p class="best__text">LAS VEGAS, NEVADA</p>
+                </header>
+                <main class="best__main">
+                    <div class="days">
+                        <i class="fa-regular fa-calendar-days best__icon"></i>
+                        <p class="best__subtext">Número de días: 4</p>
+                    </div>
+                    <div class="people">
+                        <i class="fa-solid fa-user best__icon"></i>
+                        <p>Personas: 4</p>
+                    </div>
+                </main>
+                <footer class="best__footer">
+                    <p class="best__price">400€</p>
+                    <button class="best__btn">
+                        <a href="./pages/packages.html">Ver detalles</a>
+                    </button>
+                </footer>
+            </article>
+        </section>
+        <!-- CLIENTS (Hacer aparecer a partir de x resolucion) -->
+        <section class="clients">
+            <h2 class="clients__title">Las palabras de nuestros clientes</h2>
+            <div class="clients__cont">
+                <img class="clients__img" src="./assets/images/home/authour-img.jpg" alt="authour-img">
+                <p class="clients__text">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."</p>
+            </div>
+            <p class="client__name">Jaime Hunt</p>
+        </section>
+        <!-- LOVE (Hacer aparecer img a partir de x resolucion)  -->
+        <section class="love">
+            <h2 class="love__title">¿Por qué deberías amar SunWORD?</h2>
+            <div class="love__texts">
+                <p class="love__text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, ut unde minus odit repellat quidem fugiat neque suscipit maxime excepturi alias beatae consequuntur explicabo deleniti nobis omnis! Deserunt, ipsum magni. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
 
+                <p class="love__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+            </div>
+            <div class="love__cont-img">
+                <img class="love__img" src="./assets/images/home/vistas.png" alt="vistas">
+            </div>
+        </section>
+        <!-- VIDEO (Hacer aparecer a partir de x resolucion) -->
+        <section class="video-sect">
+            <div class="video__cont">
+                <h2 class="video__title">Nuestras Mejores experincias</h2>
+                <p class="video__text">Descubre lo que nuestros clietnes vivieron en sus viajes</p>
+            </div>
+            <div class="video__cont2">
+                <video class="video" muted loop autoplay src="./assets/videos/Video-Sevilla.mp4"></video>
+            </div>
+        </section>
     </main>
 
     <!-- FOOTER -->
-    <footer>
-
+    <footer class="footer">
+        <div class="footer-top">
+            <!-- SERVICIOS -->
+            <section class="services">
+                <h3>Servicios 100% personalizados</h3>
+                <ul class="footer__lis">
+                    <li class="footer__item">Rutas, excursiones y experiencias en tren</li>
+                    <li class="footer__item">Política de privacidad - Términos y condiciones</li>
+                </ul>
+            </section>
+            <!-- ENLACES -->
+            <section class="enlaces">
+                <ul class="footer__lis">
+                    <li class="footer__item"><a href="">Hoteles</a></li>
+                    <li class="footer__item"><a href="">Lugares</a></li>
+                    <li class="footer__item"><a href="">Paquetes</a>Contacto</li>
+                </ul>
+            </section>
+            <!-- SOCIAL -->
+            <section class="social">
+                <ul class="footer__lis">
+                    <a href="https://github.com/Jhona-sZ/SunWARD" target="_blank">
+                        <i class="fa-brands fa-github footer__icon"></i>
+                        Github
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook footer__icon"></i>
+                        Facebook
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-whatsapp footer__icon"></i>
+                        Whatsapp
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-youtube footer__icon"></i>
+                        Youtube
+                    </a> 
+                </ul>
+            </section>
+        </div>   
+        <div class="footer-bottom">
+            <i class="fa-regular fa-copyright bottom__icon"></i>
+            <p>COPYRIGHT 2025. SunWORD.es. TODOS LOS DERECHOS RESERVADOS.</p>
+        </div>
     </footer>
 </body>
 </html>
