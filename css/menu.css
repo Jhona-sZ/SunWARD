@@ -1,0 +1,45 @@
+/**** MENÚ ****/
+ .nav {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    font-family: "Inter";
+}
+
+.nav.active {
+    max-height: 350px;
+}
+
+.nav__list {
+    list-style: none;
+    padding: 20px 40px;
+    margin: 0;
+}
+
+.nav__item {
+    padding: 15px 0;
+    border-bottom: 1px solid #555;
+}
+
+.nav__item:last-child {
+    border-bottom: none;
+}
+
+.nav__link {
+    color: #000;
+    text-decoration: none;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: color 0.3s ease;
+}
+
+.nav__link:hover {
+    color: #087dc2;
+}
+
+.nav__link i {
+    font-size: 20px;
+    width: 25px;
+}

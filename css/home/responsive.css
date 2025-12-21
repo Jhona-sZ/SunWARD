@@ -1,0 +1,550 @@
+/* BREACKPOINT 480PX */
+@media screen and (min-width: 480px) {
+
+    /* TOP-BAR */
+    .top-bar {
+        display: block;
+    }
+    
+    /* FOOTER */
+    .footer-top {
+        display: flex;
+    }
+}
+
+
+/* BREAKPOINT 800PX */
+@media screen and (min-width: 800px) {
+    /**** TOP-BAR ****/
+    .top-bar__content{
+        padding: 0 25px;
+    }
+    .top-bar__icon{
+        font-size: 1rem;
+    }
+    .top-bar__text{
+        font-size: 1rem;
+        transition: all 0.6s;
+    }
+    .top-bar__link{
+        font-size: 1rem;
+        transition: all 0.6s;
+    }
+    /**** HEADER ****/
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+    .header__logo{
+        padding: 0;
+    }
+    .header__title {
+        display: none;
+    }
+
+    .header__img {
+        display: block;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+        overflow: visible;
+        background-color: white;
+    }
+
+    .nav__list {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        padding: 0;
+    }
+
+    .nav__item {
+        padding: 0;
+        border-bottom: none;
+    }
+    .nav__link i {
+        border-bottom: none;
+    }
+    /* SECTION THEME */
+    @keyframes slideDown {
+        from {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(40%);
+            opacity: 1;
+        }
+    }
+
+    .theme__cont {
+        justify-content: space-around;
+        gap: 5px;
+        transition: all 0.8s;
+    }
+
+    .theme__img {
+        width: 250px;
+        transform: scale(1.02);
+    }
+
+    .theme__title {
+        font-size: 2rem;
+        transform: scale(1.02);
+    }
+
+    /**** CONTAINER ****/
+    .home-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "header header"
+            "theme theme"
+            "welcome welcome"
+            "info info"
+            "best best"
+            "clients clients"
+            "love love"
+            "video video"
+            "footer footer";
+    }
+    /**** WELCOME ****/
+    .welcome__text{
+        text-align: center;
+    }
+    .info{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+    }
+    .info__card{
+        width: 148px;
+        /* height: 200px; */
+    }
+    .info__header{
+        gap: 5px;
+        justify-content: center;
+    }
+    .info__title{
+        font-size: 0.8rem;
+        width: 100%;
+    }
+    .info__text{
+        font-size: 0.7rem;
+        margin-bottom: 0;
+    }
+   
+    /**** BEST ****/
+    /* CONTENEDOR GRID */
+    .best__cont {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 80px;
+        margin-bottom: 40px;
+    }
+
+    .best__card {
+        margin: 0;
+        width: 300px;
+    }
+    /* BEST HEADER */
+    .best__header{
+        padding-left: 10px;
+    }
+    .best__title2{
+        font-size: 1rem;
+    }
+    /* BEST MAIN */
+    .best__main{
+        padding-left: 10px;
+    }
+    /* BEST FOOTER */
+    .best__footer{
+        padding-left: 10px;
+        gap: 130px;
+    }
+    .best__price{
+        font-size: 1.4rem;
+    }
+    /*  VIDEO */
+    .video{
+        height: 350px;
+    }
+}
+
+/* BREACKPOINT 1024PX */
+@media screen and (min-width:1024px) {
+    /**** HEADER ****/
+    .top-bar__icon{
+        font-size: 1.2rem;
+    }
+    .top-bar__text{
+        font-size: 1.2rem;
+    }
+    .header__img{
+        width: 200px;
+    }
+    
+    /**** MENÚ ****/
+    .nav__link{
+        font-size: 1.2rem;
+    }
+
+    /**** THEME ****/
+    .theme{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 450px;
+    }
+    @keyframes slideDown {
+        from {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(15%);
+            opacity: 1;
+        }
+    }
+    .theme__img{
+        display: none;
+    }
+    .theme__title{
+        text-align: center;
+        font-size: 2.2rem;
+    }
+  
+    /** FORMULARIO **/  
+    .tabs {
+        display: flex;
+        gap: 0;
+        margin-top: 20px;
+    }
+
+    .tab {
+        background-color: rgba(255, 255, 255, 0.808);
+        color: #666;
+        font-family: "Inter";
+        padding: 15px 40px;
+        border: none;
+        font-size: 15px;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+    }
+
+    .tab:first-child {
+        border-radius: 0;
+    }
+
+    .tab:hover {
+        background-color: #c0c0c0;
+    }
+
+    .tab-active {
+        background-color: #7cb342;
+        color: white;
+    }
+
+    .search-form {
+        display: block;
+        background-color: rgba(255, 255, 255, 0.808);
+        padding: 30px;
+        border-radius: 0 0 5px 5px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    }
+
+    .form-row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+
+    .form-row:last-child {
+        margin-bottom: 0;
+    }
+
+    .form-group {
+        position: relative;
+    }
+    .form-input,
+    .form-select {
+        width: 100%;
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        font-size: 14px;
+        color: #666;
+        background-color: white;
+        appearance: none;
+        font-size: 1.1rem;
+    }
+
+    .form-select {
+        background-image: url("./../../assets/images/home/arrow_drop_down_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg");
+        background-repeat: no-repeat;
+        background-position: right 5px center;
+        padding-right: 40px;
+    }
+
+    .form-input:focus,
+    .form-select:focus {
+        outline: none;
+        border-color: #7cb342;
+    }
+
+    .btn-submit {
+        width: 100%;
+        padding: 13px 20px;
+        background-color: #7cb342;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+        font-size: 1rem;
+        font-family: "Inter";
+    }
+
+    .btn-submit:hover {
+        background-color: #666;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    
+    /**** WELCOME ****/
+    .welcome__title{
+        font-size: 2rem;
+    }
+    .welcome__icon{
+        font-size: 1.5rem;
+    }
+    .welcome__text{
+        font-size: 1.1rem;
+    }
+    .welcome__link{
+        font-size: 1rem;
+    }
+
+    /**** INFO ****/
+    .info__header{
+        gap: 0px;
+    }
+    .info__title{
+        font-size: 1.5rem;
+    }
+    .info__text{
+        font-size: 1rem;
+    }
+    .info__card{
+        width: 211px;
+    }
+
+    /**** BEST ****/
+    .best__card{
+        width: 400px;
+    }
+    .best__title{
+        font-size: 2rem;
+    }
+    .best__title2{
+        font-size: 1.42rem;
+    }
+    .best__text{
+        font-size: 1.2rem;
+    }
+    .best__icon{
+        font-size: 1.1rem;
+    }
+    .best__subtext{
+        font-size: 1.1rem;
+    }
+    .best__footer{
+        gap: 180px;
+    }
+    .best__price{
+        font-size: 2rem;
+    }
+    .best__link{
+        font-size: 1.2rem;
+    }
+
+    /**** CLIENTS ****/
+    .client{
+        flex-direction: row;
+        width: 100%;
+        gap: 20px;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .client__img{
+        width: 200px;
+    }
+    .clients__title{
+        font-size: 2rem;
+    }
+    .client__text{
+        font-size: 1.2rem;
+    }
+    .client__subname{
+        font-size: 1.1rem;
+    }
+
+    /**** LOVE ****/
+    .love__title{
+        font-size: 2rem;
+    }
+    .love__texts{
+        font-size: 1.2rem;
+    }
+    .love__img{
+        width: 750px;
+    }
+
+    /**** VIDEO ****/
+    .video__title{
+        font-size: 2rem;
+    }
+    .video__text{
+        font-size: 1.5rem;
+    }
+    .video{
+        height: 500px;
+        transition: all 0.4s;
+    }
+
+    /**** FOOTER ****/
+    .footer__title{
+        font-size: 2rem;
+    }
+    .footer__link{
+        font-size: 1.2rem;
+    }
+    .footer__icon{
+        font-size: 1.2rem;
+    }
+    .footer-bottom{
+        font-size: 1.2rem;
+    }
+}
+
+/**** BREACKPOINT 1200px ****/
+@media screen and (min-width:1200px){
+    /**** HEADER ****/
+    .header__img{
+        animation: rotateImg 2.5s ease-out forwards;
+    }
+    @keyframes rotateImg {
+        0% {
+            transform: rotate(0deg) scale(0);
+            opacity: 0;
+        }
+        50%{
+            opacity: 0.5;
+        }
+        100% {
+            transform: rotate(360deg) scale(1); 
+            opacity: 1;
+        }
+    }
+
+    /**** INFO ****/
+    .info__card{
+        width: 248px;
+    }
+    .info__header{
+        gap: 6px;
+    }
+    .info__img{
+        height: 70px;
+    }
+    .info__title{
+        font-size: 1.1rem;
+    }
+    .info__text{
+        font-size: 0.9rem;
+    }
+
+    /**** BEST ****/
+    .best__cont{
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+    /* border: 2px solid red;  */
+    width: 100%;
+    }
+    .best__card{
+        width: 270px;
+    }
+    .best__title2{
+        font-size: 0.9rem;
+    }
+    .best__text{
+        font-size: 0.8125rem;
+    }
+    .best__icon{
+        font-size: 0.7125rem;
+    }
+    .best__subtext{
+        font-size: 0.7125rem;
+    }
+    .best__footer{
+        gap: 100px;
+    }
+    .best__price{
+        font-size: 1.5rem;
+    }
+    .best__link{
+        font-size: 0.8125rem;
+    }
+
+    /**** LOVE ****/
+    .love__cont{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .love__texts{
+        width: 600px;
+    }
+    .love__img{
+        transition: all 0.4s;
+        transform: scale(1);
+        width: 500px;
+    }
+    .love__img:hover{
+        transform: scale(1.05);
+    }
+
+    /**** VIDEO ****/
+   .video-sect{
+    flex-direction: row;
+    justify-content: space-between;
+    transition: all 0.5s;
+   }
+    .video__cont2 {
+        width: 50%; 
+    }
+    .video {
+        height: 550px; 
+        object-fit: cover;
+        border-radius: 12px;  
+        border: 1px solid rgba(0, 0, 0, 0.1); 
+    }
+}
