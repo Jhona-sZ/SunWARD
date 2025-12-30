@@ -4,8 +4,383 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoteles</title>
+
+        <!-- LOGO -->
+        <link rel="shortcut icon" href="./../assets/images/logo.ico" type="image/x-icon">
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- INTER - PLAYFAIR -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <!-- MONSERRAT -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+        <!-- CSS -->
+        <link rel="stylesheet" href="./../css/style.css">
+        <link rel="stylesheet" href="./../css/header.css">
+        <link rel="stylesheet" href="./../css/menu.css">
+        <link rel="stylesheet" href="./../css/footer.css">
+        <link rel="stylesheet" href="./../css/hotels/hotels.css">
+        <link rel="stylesheet" href="./../css/hotels/responsive-hotels.css">
+
+    
+    <!-- FAVICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
-    
+    <!-- CAPA-SUPERIOR -->
+    <section class="top-bar">
+        <article class="top-bar__content">
+            <div class="top-bar__questions">
+                <i class="fa-solid fa-phone top-bar__icon"></i>
+                <p class="top-bar__text">¿Tienes alguna pregunta? Llamános: 910 123 456</p>
+            </div>
+            <div class="top-bar__register">
+                <div class="login">
+                    <a class="top-bar__link" href="#">
+                        <i class="fa-solid fa-arrow-right-to-bracket top-bar__icon"></i>
+                        Login
+                    </a>
+                </div>
+                <div class="register">
+                    <a class="top-bar__link" href="#" >
+                        <i class="fa-solid fa-user top-bar__icon"></i>
+                        Register
+                    </a>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- HEADER -->
+    <header class="header">
+        <!-- LOGO y Botón Hamburguesa -->
+        <section class="header__logo">
+            <h1 class="header__title">Menú</h1>
+            <img class="header__img" src="./../assets/images/home/logo-title.png" alt="logo">
+            <!-- MENÚ HAMBURGUESA -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </section>
+        
+        <!-- MENÚ -->
+        <nav class="nav" id="menu">
+            <ul class="nav__list">
+                <!-- HOME -->
+                <li class="nav__item">
+                    <a href="./../../index.html" class="nav__link">
+                        <i class="fa-solid fa-house-chimney"></i>
+                        Inicio
+                    </a>
+                </li>
+                <!-- HOTELS -->
+                <li class="nav__item">
+                    <a href="./hotels.html" class="nav__link">
+                        <i class="fa-solid fa-bell-concierge"></i>
+                        Hoteles
+                    </a>
+                </li>
+                <!-- PLACES -->
+                <li class="nav__item">
+                    <a href="./places.html" class="nav__link">
+                        <i class="fa-solid fa-plane-departure"></i>
+                        Lugares
+                    </a>
+                </li>
+                <!-- PACKAGES -->
+                <li class="nav__item">
+                    <a href="./packages.html" class="nav__link">
+                        <i class="fa-solid fa-gift"></i>
+                        Paquetes
+                    </a>
+                </li>
+                <!-- CONTACT -->
+                <li class="nav__item">
+                    <a href="./contact.html" class="nav__link">
+                        <i class="fa-solid fa-address-book"></i>
+                        Contacto
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="hotels__container">
+        <!-- BEST-PRICE -->
+        <section class="best-price">
+            <h2 class="best-price__title">Hoteles Baratos al <span class="best-price__green">Mejor Precio</span></h2>
+            <p class="best-price__text">Encuentra y compara hotoles baratos en España. Ofertas exclusivas, precios garantizados y cancelación gratuita en más de 2,000 hoteles</p>
+            <article class="form">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input class="form-input" type="text" placeholder="¿Dónde quieres ir?">
+                        </div>
+
+                        <div class="form-group">
+                            <input class="form-input" type="date" placeholder="25/01/2004">
+                        </div>
+
+                        <div class="form-group">
+                            <input class="form-input" type="date" placeholder="12/02/2004">
+                        </div>
+
+                        <button class="form-btn">
+                            <i class="form__icon fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </form>
+            </article>
+        </section>
+
+        <!-- DESTACADOS (Poner a la izquierda a x resolucion ) -->
+        <aside class="destacados">
+            <h2 class="destacados__title">Hoteles Destacados</h2>
+            <p class="destacados__subtitle">Los hoteles mejor valorados en destinos populares</p>
+
+            <!-- Madrid -->
+            <article id="madrid" class="destacados__card">
+                <img class="destacados__img" src="./../assets/images/hotels/hotel-1.jpg" alt="hotel-1">
+                <header class="destacados__header">
+                    <h3 class="destacados__card-title">Exe Moncloa</h3>
+                </header>
+                <main class="destacados__main">
+                    <div class="destacados__texts">
+                        <i class="destacados__icon fa-solid fa-location-dot"></i>
+                        <p class="descados__text">Madrid, España</p>
+                    </div>
+
+                    <div class="destacados__rating">
+                        <div class="destacados__icon">
+                            <i class="rating__icon fa-solid fa-star"></i>
+                            <i class="rating__icon fa-solid fa-star"></i>
+                            <i class="rating__icon fa-solid fa-star"></i>
+                            <i class="rating__icon fa-solid fa-star"></i>
+                            <i class="rating__icon fa-solid fa-star-half-stroke"></i>
+                            <p class="destacados__text-rating">4.70 (1005)</p>
+                        </div>
+                    </div>
+                </main>
+               
+                <footer class="destacados__footer">
+                    <p class="destacados__price">135,00€</p>
+                    <button class="destacados__btn">
+                        <a class="destacados__link" href="#"">Ver Disponibilidad</a>
+                    </button>
+                </footer>
+            </article>
+
+           <!-- Sevilla -->     
+           <article id="sevilla" class="destacados__card">
+                <img class="destacados__img" src="./../assets/images/hotels/hotel-2.jpg" alt="hotel-2">
+                <header class="destacados__header">
+                    <h3 class="destacados__card-title">Silken Al-Andalus Palace</h3>
+                </header>
+                
+                <main class="destacados__main">
+                    <div class="destacados__texts">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="descados__text">Sevilla, España</p>
+                    </div>
+
+                    <div class="destacados__rating">
+                        <div class="destacados__icon">
+                            <i class="rating__icon fa-solid fa-star"></i>
+                            <i class="rating__icon fa-solid fa-star"></i>
+                            <i class="rating__icon fa-solid fa-star"></i>
+                            <i class="rating__icon fa-solid fa-star"></i>
+                            <i class="rating__icon fa-solid fa-star-half-stroke"></i>
+                            <p class="destacados__text-rating">4.40 (633)</p>
+                        </div>
+                    </div>
+                </main>
+                
+                <footer class="destacados__footer">                    
+                    <p class="destacados__price">122,00€</p>
+                    <button class="destacados__btn">
+                        <a class="destacados__link" href="#"">Ver Disponibilidad</a>
+                    </button>
+                </footer>
+            </article>   
+               
+            <!-- Barcelona -->
+            <article id="barcelona" class="destacados__card">
+                <img class="destacados__img" src="./../assets/images/hotels/hotel-3.jpg" alt="hotel-3">
+                <header class="destacados__header">
+                    <h3 class="destacados__card-title">Catalonia Gran Vía Madrid</h3>
+                </header>
+                <main class="destacados__main">
+                    <div class="destacados__texts">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="descados__text">Barcelona, España</p>
+                    </div>
+                    <div class="destacados__rating">
+                    <div class="destacados__icon">
+                        <i class="rating__icon fa-solid fa-star"></i>
+                        <i class="rating__icon fa-solid fa-star"></i>
+                        <i class="rating__icon fa-solid fa-star"></i>
+                        <i class="rating__icon fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <p class="destacados__text-rating">4.10 (1224)</p>
+                    </div>
+                    </div>
+                </main>
+                
+                <footer class="destacados__footer">                         
+                    <p class="destacados__price">136,00€</p>
+                    <button class="destacados__btn">
+                        <a class="destacados__link" href="#"">Ver Disponibilidad</a>
+                    </button>
+                </footer>
+                
+            </article>
+
+            <!-- Alicante -->
+            <article id="alicante" class="destacados__card">
+                <img class="destacados__img" src="./../assets/images/hotels/hotel-4.jpg" alt="hotel-4">
+                <header class="destacados__header">
+                    <h3 class="destacados__card-title">Hospes Amérigo, Alicante, a Member of Design Hotels</h3>
+                </header>
+                <main class="destacados__main">
+                    <div class="destacados__texts">    
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="descados__text"> Alicante, España</p>
+                    </div>
+
+                    <div class="destacados__rating">
+                    <div class="destacados__icon">
+                        <i class="rating__icon fa-solid fa-star"></i>
+                        <i class="rating__icon fa-solid fa-star"></i>
+                        <i class="rating__icon fa-solid fa-star"></i>
+                        <i class="rating__icon fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <p class="destacados__text-rating">4.00 (674)</p>
+                    </div>
+                    </div>
+                </main>
+                
+                <footer class="destacados__footer">                         
+                    <p class="destacados__price">106,00€</p>
+                    <button class="destacados__btn">
+                        <a class="destacados__link" href="#"">Ver Disponibilidad</a>
+                    </button>
+                </footer>
+            </article>
+        </aside>
+
+        <!-- POPULAR (Añadir id a cada tarjeta para ir a destacados) -->
+        <section class="popular">
+            <article class="popular__content">
+                <h2 class="popular__title">Destinos Populares para Encontrar Hoteles Económicos</h2>
+                <p class="popular__text">Nuestro catálogo incluye hoteles baratos en España y los principales destinos turísticos europeos. Desde la vibrante Barcelona hasta la histórica Sevilla, pasando por las playas paradisíacas de las Islas Baleares y Canarias, encontrarás alojamientos económicos que se adapten a tu presupuesto.</p>
+                <div class="destiny__cont">
+                    <!-- 1 -->
+                    <div class="destiny">
+                        <a class="destiny__link" href="#madrid">Madrid</a>
+                        <p class="destiny__text">desde 45€/noche</p>
+                    </div>
+                    <!-- 2 -->
+                    <div class="destiny">
+                        <a class="destiny__link" href="#barcelona">Barcelona</a>
+                        <p class="destiny__text">desde 55€/noche</p>
+                    </div>
+                    <!-- 3 -->
+                    <div class="destiny">
+                        <a class="destiny__link" href="#sevilla">Sevilla</a>
+                        <p class="destiny__text">desde 38€/noche</p>
+                    </div>
+                    <!-- 4 -->
+                    <div class="destiny">
+                        <a class="destiny__link" href="#valencia">Valencia</a>
+                        <p class="destiny__text">desde 42€/noche</p>
+                    </div>
+                </div>
+              
+            </article>
+        </section>
+
+        <!-- QUESTIONS -->
+        <section class="questions">
+            <article class="questions__content">
+                <header class="questions__header">
+                    <h2 class="questions__title">Preguntas Frecuentes sobre Hoteles Baratos</h2>
+                </header>
+               <main class="questions__main">
+                <!-- 1? -->
+                    <div class="questions__ans">
+                        <h3 class="questions__subtitle">¿Cómo puedo estar seguro de que estoy obteniendo el mejor precio?</h3>
+                        <p class="questions__text">Utilizamos algoritmos avanzados que comparan precios de más de 200 sitios web de reservas en tiempo real. Si encuentras un precio menor en otro sitio, te igualamos el precio más un 5% de descuento adicional.</p>
+                    </div>
+                    <!-- 2? -->
+                    <div class="questions__ans">
+                        <h3 class="questions__subtitle">¿Los hoteles baratos tienen buena calidad?</h3>
+                        <p class="questions__text">Todos nuestros hoteles pasan por un riguroso proceso de selección. Solo trabajamos con propiedades que mantienen altos estándares de limpieza, servicio y comodidad, independientemente del precio.</p>
+                    </div>
+                    <!-- 3? -->
+                    <div class="questions__ans">
+                        <h3 class="questions__subtitle">¿Puedo cancelar mi reserva sin penalización?</h3>
+                        <p class="questions__text">La mayoría de nuestras reservas incluyen cancelación gratuita hasta 24-48 horas antes del check-in. Las condiciones específicas se muestran claramente antes de confirmar tu reserva.</p>
+                    </div>
+               </main>
+              
+            </article>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <!-- FOOTER-TOP (Hacer aparecer a partir de x resolucion) -->
+        <div class="footer-top">
+            <!-- ENLACES -->
+            <section class="enlaces">
+                <h3 class="footer__title">Nuestros Servicios</h3>
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="footer__link" href="./
+                        hotels.html">Hoteles</a></li>
+                    <li class="footer__item"><a class="footer__link" href="./places.html">Lugares</a></li>
+                    <li class="footer__item"><a class="footer__link" href="./packages.html">Paquetes</a>
+                    <li class="footer__item"><a class="footer__link" href="./contact.html">Contacto</a>
+                </ul>
+            </section>
+            <!-- SOCIAL -->
+            <section class="social">
+                <h3 class="footer__title">Nuestras Redes</h3>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a class="footer__link" href="https://github.com/Jhona-sZ/SunWARD" target="_blank">
+                            <i class="fa-brands fa-github footer__icon"></i>Github
+                        </a>
+                    </li>
+
+                    <li class="footer___item">
+                        <a class="footer__link" href="#">
+                            <i class="fa-brands fa-facebook footer__icon"></i>Facebook
+                        </a>
+                    </li>
+                    
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            <i class="fa-brands fa-whatsapp footer__icon"></i>Whatsapp
+                        </a>
+                    </li>
+                  
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            <i class="fa-brands fa-youtube footer__icon"></i>Youtube
+                        </a> 
+                    </li>  
+                </ul>
+            </section>
+        </div>  
+        <!-- FOOTER-BOTTOM (Hacer aparecer siempre) --> 
+        <div class="footer-bottom">
+            <i class="fa-regular fa-copyright bottom__icon footer__icon"></i>
+            <p class="footer__text">COPYRIGHT 2025. SunWORD.es. TODOS LOS DERECHOS RESERVADOS.</p>
+        </div>
+    </footer>
+    <script src="./../js/menu/hamburger.js"></script>
 </body>
 </html>

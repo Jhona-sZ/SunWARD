@@ -1,0 +1,132 @@
+/* BREACKPOINT 480PX */
+@media screen and (min-width: 480px) {
+
+    /* TOP-BAR */
+    .top-bar {
+        display: block;
+    }
+    
+    /* FOOTER */
+    .footer-top {
+        display: flex;
+    }
+}
+
+/* BREAKPOINT 800PX */
+@media screen and (min-width: 800px) {
+    /**** TOP-BAR ****/
+    .top-bar__content{
+        padding: 0 25px;
+    }
+    .top-bar__icon{
+        font-size: 1rem;
+    }
+    .top-bar__text{
+        font-size: 1rem;
+        transition: all 0.6s;
+    }
+    .top-bar__link{
+        font-size: 1rem;
+        transition: all 0.6s;
+    }
+    /**** HEADER ****/
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+    .header__logo{
+        padding: 0;
+    }
+    .header__title {
+        display: none;
+    }
+
+    .header__img {
+        display: block;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+        overflow: visible;
+        background-color: white;
+    }
+
+    .nav__list {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        padding: 0;
+    }
+
+    .nav__item {
+        padding: 0;
+        border-bottom: none;
+    }
+    .nav__link i {
+        border-bottom: none;
+    }
+
+}
+
+/* BREACKPOINT 1024PX */
+@media screen and (min-width:1024px) {
+    /**** HEADER ****/
+    .top-bar__icon{
+        font-size: 1.2rem;
+    }
+    .top-bar__text{
+        font-size: 1.2rem;
+    }
+    .header__img{
+        width: 200px;
+    }
+    
+    /**** MENÚ ****/
+    .nav__link{
+        font-size: 1.2rem;
+    }
+
+    /**** FOOTER ****/
+    .footer__title{
+        font-size: 2rem;
+    }
+    .footer__link{
+        font-size: 1.2rem;
+    }
+    .footer__icon{
+        font-size: 1.2rem;
+    }
+    .footer-bottom{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width:1200px){
+    /**** HEADER ****/
+    .header__img{
+        animation: rotateImg 2.5s ease-out forwards;
+    }
+    @keyframes rotateImg {
+        0% {
+            transform: rotate(0deg) scale(0);
+            opacity: 0;
+        }
+        50%{
+            opacity: 0.5;
+        }
+        100% {
+            transform: rotate(360deg) scale(1); 
+            opacity: 1;
+        }
+    }
+}

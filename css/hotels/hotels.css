@@ -1,0 +1,319 @@
+/**** HOTELS-CONTAINER ****/
+.hotels__container {
+    width: 100%;
+    margin: 0 auto;
+    min-width: 460px;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "best"
+        "aside"
+        "popular"
+        "questions"
+        "footer"
+    ;
+}
+
+/**** BEST-PRICE ****/
+.best-price {
+    grid-area: best;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.best-price__title {
+    color: rgb(46, 46, 46);
+    font-size: 1.2rem;
+    font-family: "Inter";
+    font-weight: normal;
+}
+
+.best-price__green {
+    color: #6dc82b;
+}
+
+.best-price__text {
+    color: #616161;
+    font-size: 0.875rem;
+    font-family: "Inter";
+}
+
+/** FORMULARIO **/
+.form {
+    display: none;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    border-radius: 5%;
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    padding: 30px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fill, auto);
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #666;
+    background-color: white;
+    appearance: none;
+    font-size: 0.875rem;
+    color: #7cb342;
+    font-family: "Inter";
+}
+
+.form-input:focus {
+    outline: none;
+    /* border-color: #7cb342; */
+}
+
+.form-input::placeholder {
+    color: #087dc2;
+}
+
+.form-btn {
+    width: 100%;
+    padding: 2px 10px;
+    background-color: #7cb342;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-size: 0.875rem;
+    font-family: "Inter";
+}
+
+.form-btn:hover {
+    background-color: #666;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/**** DESTACADOS ****/
+.destacados {
+    margin-top: 40px;
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px;
+    margin-bottom: 40px;
+}
+.destacados__title{
+    color: rgb(46, 46, 46);
+    font-size: 1.2rem;
+    font-family: "Inter";
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+.destacados__subtitle{
+    font-family: 1rem;
+    margin-top: 0;
+    font-family: "Monserrat";
+    color: #2c3e50;
+}
+.destacados__card {
+    width: 280px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border: 1px solid #eceeeb;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.39);
+    border-radius: 5px;
+}
+.destacados__header{
+    padding-left: 10px;
+}
+.destacados__card-title{
+    font-size: 1.2rem;
+    font-family: "Inter";
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+/** DESTACADOS__main **/
+.destacados__main{
+    padding-left: 10px;
+    font-family: "Inter";
+    font-size: 0.9rem;
+}
+.destacados__texts{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #616161;
+}
+.destacados__icon{
+    font-size: 0.8rem;
+}
+.destacados__img {
+    width: 100%;
+    border-radius: 5px;
+}
+.destacados__rating{
+    font-size: 0.8rem;
+}
+.destacados__icon{
+    display: flex;
+    align-items: center; 
+}
+.rating__icon{
+    color: #ebc11c; 
+
+}
+.destacados__text-rating{
+    margin-left: 10px;
+}
+
+/** DESTACADOS FOOTER **/
+.destacados__footer{
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    font-size: 1rem;
+}
+.destacados__price{
+    font-family: "Playfair";
+    font-size: 1.1rem;
+}
+/****  AÑADIR EFECTO BTN ***/
+.destacados__btn{
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding:5px 7px;
+    background-color: #6dc82b;
+}
+.destacados__link{
+    text-decoration: none;
+    color: white;
+}
+
+
+/**** POPULAR ****/
+.popular {
+    grid-area: popular;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px;
+    margin-bottom: 40px;
+}
+.popular__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Inter";
+    background-color: #f8f9fa;
+    padding: 16px;
+    border-radius: 5%;
+    transition: all 0.3s;
+}
+.popular__content:hover{
+    transform: scale(1.01);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+.popular__title{
+    font-size: 1.2rem;
+    color: rgb(46, 46, 46);
+    font-weight: normal;
+    text-align: center;
+}
+.popular__text{
+    font-size: 0.9rem;
+    margin-top: 0;
+}
+.destiny__cont{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.destiny{
+    border: 1px solid #eceeeb;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.39);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9rem;
+    font-family: "Inter";
+    padding: 10px;
+    background: #fff;
+}
+.destiny__link{
+    color: #0d6efd;
+}
+.destiny__text{
+    color: #666;
+}
+
+/**** QUESTIONS ****/
+.questions {
+    grid-area: questions;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px;
+    margin-bottom: 40px;
+}
+.questions__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #eceeeb;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 5%;
+    font-family: "Inter";
+    font-weight: normal;
+    transition: all 0.3s;
+}
+.questions__content:hover{
+    transform: scale(1.01);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+.questions__header{
+    /* background: #f8f9fa; */
+    padding: 16px;
+}
+.questions__title{
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    color: rgb(46, 46, 46);
+}
+.questions__main{
+    background: #efeeee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.questions__ans{
+    padding:5px 16px;
+}
+.questions__subtitle{
+    color: #34495e;
+    font-size: 0.9rem;
+}
+.questions__text{
+    font-size: 0.8rem;
+}
