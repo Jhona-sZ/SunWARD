@@ -75,7 +75,64 @@
     .nav__link i {
         border-bottom: none;
     }
+    .best-price__title{
+        font-size: 1.4rem;
+    }
+    .best-price__text{
+        font-size: 1rem;
+    }
 
+    /**** Destacados ****/
+    .destacados__title{
+        font-size: 1.4rem;
+    }
+    .destacados__subtitle{
+        font-size: 1.3rem;
+    }
+    .destacados__content{
+        gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .destacados__card{
+        width: 350px;
+    }
+    .destacados__texts{
+        font-size: 1rem;
+    }
+    .destacados__rating{
+        font-size: 0.9rem;
+    }
+
+    .destacados__price{
+        font-size: 1.5rem;
+    }
+    .destacados__link{
+        font-size: 1rem;
+    }
+
+    /**** POPULAR ****/
+    .popular__title{
+        font-size: 1.4rem;
+    }
+    .popular__text{
+        font-size: 1.1rem;
+    }
+    .destiny__cont{
+        display: grid;
+        grid-template-columns: repeat(2, 350px);
+    }
+    .destiny__link, .destiny__tetx{
+        font-size: 1.1rem;
+    }
+
+    /**** QUESTIONS ****/
+    .questions__subtitle{
+        font-size: 1.1rem;
+    }
+    .questions__text{
+        font-size: 1rem;
+    }
 }
 
 /* BREACKPOINT 1024PX */
@@ -96,6 +153,33 @@
         font-size: 1.2rem;
     }
 
+    /**** FORMULARIO ****/
+    .form{
+        display: block;
+    }
+
+
+    /**** DESTACADOS ****/
+    .destacados__content{
+        gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .destacados__card{
+        width: 270px;
+    }
+    
+    /** DESTACADOS FOOTER **/
+    .destacados__footer{
+        gap: 60px;
+    }
+    .destacados__price{
+        font-size: 1.2rem;
+    }
+    .destacados__link{
+        font-size: 0.8rem;
+    }
+
     /**** FOOTER ****/
     .footer__title{
         font-size: 2rem;
@@ -111,11 +195,66 @@
     }
 }
 
+/* BREACKPOINT 1200PX */
 @media screen and (min-width:1200px){
+    /** HOTELS-CONTAINER **/
+       .hotels__container{
+        grid-template-columns: 350px 1fr;
+        grid-template-areas: 
+        "header header"
+        "aside best"
+        "aside popular"
+        "aside questions"
+        "footer footer"
+        ;   
+        gap: 40px;
+    }
+    .destacados{
+        margin: 0;
+        
+    }
+    .destacados__content{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .destacados__card{
+        transition: all 0.4s;
+        /* width: 200px; */
+        height: 290px;
+        gap: 0;
+        margin: 0;
+    }
+    .destacados__img{
+        /* width: 150px; */
+       height: 150px;
+    }
+    .destacados__subtitle{
+        text-align: justify;
+    }
+    .descados__text{
+        margin: 5px;
+    }
+    .destacados__text{
+        margin: 5px;
+    }
+    .destacados__text-rating{
+        margin: 5px;
+    }
+    .destacados__price{
+        margin: 5px;
+    }
+
+    /**** POPULAR ****/
+    .popular, .questions{
+        margin-bottom: 0;
+    }
     /**** HEADER ****/
     .header__img{
         animation: rotateImg 2.5s ease-out forwards;
     }
+
     @keyframes rotateImg {
         0% {
             transform: rotate(0deg) scale(0);
@@ -130,3 +269,5 @@
         }
     }
 }
+
+   
