@@ -107,6 +107,7 @@
 
 /**** DESTACADOS ****/
 .destacados {
+    margin: 0 auto;
     margin-top: 40px;
     grid-area: aside;
     padding: 0 30px;

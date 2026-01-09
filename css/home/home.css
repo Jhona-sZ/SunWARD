@@ -163,11 +163,13 @@
     align-items: center;
     justify-content: start;
     gap: 15px;
+    height: 68px;
 }
 .info__img{
     background-color: rgb(109,200,43);
     border-radius: 5px;
     padding: 10px;
+    height: 70px;
     /* width: 60px; */
 }
 .info__title{
