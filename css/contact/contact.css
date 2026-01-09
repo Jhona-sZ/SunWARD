@@ -1,0 +1,99 @@
+/**** CONTACT-CONTAINER ****/
+.contact__container{
+    width: 100%;
+    margin: 0 auto;
+    min-width: 460px;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "data"
+        "footer"
+    ;
+}
+
+.data{
+    grid-area: data;
+    margin: auto;
+    padding: 0 30px;
+}
+.data__cont{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.title{
+    font-size: 2rem;
+    font-family: "Inter";
+    font-weight: normal;
+}
+.data__text{
+    font-size: 1.2rem;
+    font-family: "Inter";
+    margin: 10px 0;
+}
+/** FORMULARIO **/
+.form {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    padding: 30px;
+    margin-top: 10px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: repeat(auto-fill, auto);
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #666;
+    background-color: white;
+    appearance: none;
+    font-size: 1.2rem;
+    color: #7cb342;
+    font-family: "Inter";
+}
+
+.form-input:focus {
+    outline: none;
+}
+
+.form-input::placeholder {
+    color: #087dc2;
+}
+
+.form-btn {
+    width: 100%;
+    padding: 2px 10px;
+    background-color: #7cb342;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+    font-family: "Inter";
+}
+
+.form-btn:hover {
+    background-color: #666;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.form__link{
+    text-decoration: none;
+    color: #fff;
+}

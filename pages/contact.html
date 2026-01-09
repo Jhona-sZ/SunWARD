@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lugares</title>
+    <title>Contacto</title>
 
     <!-- LOGO -->
     <link rel="shortcut icon" href="./../assets/images/logo.ico" type="image/x-icon">
@@ -20,8 +20,8 @@
     <link rel="stylesheet" href="./../css/header.css">
     <link rel="stylesheet" href="./../css/menu.css">
     <link rel="stylesheet" href="./../css/footer.css">
-    <link rel="stylesheet" href="./../css/places/places.css">
-    <link rel="stylesheet" href="./../css/places/responsive-places.css">
+    <link rel="stylesheet" href="./../css/contact/contact.css">
+    <link rel="stylesheet" href="./../css/contact/responsive-contact.css">
 
     
     <!-- FAVICONS -->
@@ -71,7 +71,7 @@
             <ul class="nav__list">
                 <!-- HOME -->
                 <li class="nav__item">
-                    <a href="./../../index.html" class="nav__link">
+                    <a href="./../index.html" class="nav__link">
                         <i class="fa-solid fa-house-chimney"></i>
                         Inicio
                     </a>
@@ -102,8 +102,53 @@
     </header>
 
     <!-- MAIN -->
-    <main class="contact__main">
-        
+    <main class="contact__container">
+        <!-- DATOS -->
+        <section class="data">
+            <article class="data__cont">
+                <!-- FORMULARIO -->
+                <div class="data__card">
+                <h1 class="title">Déjanos tus Datos</h1>
+                <p class="data__text">Permiteneos ser el escenario del día más feliz de tu vida. Por favor, déjanos tus datos para contarte y comenzar a planear tus viajes.</p>
+
+                <article class="form">
+                    <form>
+                        <div class="form-row">
+                            <!-- NOMBRE -->
+                            <div class="form-group">
+                                <input class="form-input" type="text" placeholder="Nombre...">
+                            </div>
+
+                            <!-- APELLIDOS -->
+                            <div class="form-group">
+                                <input class="form-input" type="text" placeholder="Apellidos...">
+                            </div>
+
+                            <!-- CORREO -->
+                            <div class="form-group">
+                                <input class="form-input" type="email" placeholder="Correo electrónico">
+                            </div>
+
+                            <button class="form-btn">
+                                <a class="form__link" type="submit" href="#">Enviar</a>
+                            </button>
+                        </div>
+                    </form>
+                </article>
+                </div>
+
+                <!-- CONTACTO -->         
+                <div class="data__card">
+                    <h2 class="title">Contáctanos</h2>
+                    <p class="data__text"><strong>Teléfono:</strong> 910 123 456</p>
+
+                    <p class="data__text">C. Angosto, 35, 23280 Beas de Segura, Jaén</p>
+                    <article class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3133.157536697699!2d-2.894679323570475!3d38.25265218448816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6f174d77d39aeb%3A0x2fc9f6f427131e1d!2sNATAO%20viajes!5e0!3m2!1ses!2ses!4v1767542948546!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </article>
+                </div>
+            </article>                 
+        </section>
     </main>
 
     <!-- FOOTER -->
