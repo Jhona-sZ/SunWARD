@@ -1,12 +1,5 @@
-/* PUNTOS DE RUPTURA  DE 480 A 1200*/
-/* 480px,
-800px,
-1024px,
-1200px
-. */
 ::-webkit-scrollbar {
     width: 1rem;
-    
 }
 
 ::-webkit-scrollbar-track {
@@ -18,13 +11,13 @@
     border-radius: 8px;
     border: 3px solid #f5f5f5;
 }
+
 *{
     box-sizing: border-box;  
 }
 body{
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-    
+    overflow-x: hidden; 
 }
 

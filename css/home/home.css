@@ -432,3 +432,49 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+/*** PLANE ***/
+.plane {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 10px;
+    z-index: 10;
+}
+/** ICONO-PLANE **/
+.plane__icon {
+    font-family: "Inter";
+    font-size: 2.4rem;
+    color:  rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;    
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.plane__icon.fly {
+    animation: fly 3.5s ease-out;
+}
+
+@keyframes fly {
+    0% {
+        transform: translateY(0);
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(-200vh);
+        opacity: 0;
+    }
+}

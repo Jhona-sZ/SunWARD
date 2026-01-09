@@ -545,4 +545,13 @@
         border-radius: 12px;  
         border: 1px solid rgba(0, 0, 0, 0.1); 
     }
+
+   
+}
+/**** BREACKPOINT 1300PX ****/
+@media screen and (min-width:1300px) {
+    /**** PLANE ****/
+    .plane{
+        display: block;
+    }
 }
